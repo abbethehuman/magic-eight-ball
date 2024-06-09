@@ -1,6 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Gloock&display=swap');
+
 body {
-    font-family: 'Gothic A1', sans-serif;
-    background: url('https://www.example.com/mushroom-forest-background.jpg') no-repeat center center fixed;
+    font-family: 'Gloock', serif;
+    background: url('https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0') no-repeat center center fixed;
     background-size: cover;
     color: #fff;
     display: flex;
@@ -21,7 +23,7 @@ body {
 }
 
 h1 {
-    font-size: 2em;
+    font-size: 2.5em;
     margin-bottom: 20px;
     text-shadow: 0 0 10px #ff00ff;
 }
@@ -34,6 +36,7 @@ input {
     border: none;
     font-size: 1.2em;
     text-align: center;
+    box-shadow: 0 0 10px rgba(255, 0, 255, 0.7);
 }
 
 .magic-ball {
@@ -72,3 +75,4 @@ input {
     font-size: 1.2em;
     text-shadow: 0 0 10px #ff00ff;
 }
+
