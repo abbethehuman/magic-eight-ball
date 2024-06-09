@@ -10,9 +10,14 @@
     <div class="container">
         <h1>Welcome to the Virtual Magic 8 Ball!</h1>
         <input type="text" id="question" placeholder="Ask your question here...">
-        <button onclick="shake8Ball()">Shake the 8 Ball</button>
+        <div class="magic-ball" onclick="shake8Ball()">
+            <div class="ball">
+                <span>8</span>
+            </div>
+        </div>
         <div id="response"></div>
     </div>
     <script src="script.js"></script>
 </body>
 </html>
+
