@@ -26,3 +26,4 @@ function shake8Ball() {
     responseDiv.innerHTML = `<p>You asked: ${question}</p><p>The Magic 8 Ball says: ${randomAnswer}</p>`;
 }
 
+
