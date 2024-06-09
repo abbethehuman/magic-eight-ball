@@ -1,19 +1,20 @@
 const answers = [
-    "Definitely, but only if you're wearing a purple hat.",
-    "Ask again later, the stars are not aligned.",
-    "Absolutely not, unless you can dance like a chicken.",
-    "Only on Tuesdays during a full moon.",
-    "Sure, if you can solve a Rubik's Cube blindfolded.",
-    "No way, José!",
-    "The answer is hidden in the depths of the ocean.",
-    "Yes, but only if you hop on one leg.",
+    "Definitely.",
+    "Ask again later.",
+    "Absolutely not.",
+    "Only on Tuesdays.",
+    "Sure, why not?",
+    "No way!",
+    "The answer is hidden.",
+    "Yes, but only if...",
     "The universe says... maybe?",
-    "Only if you promise to eat broccoli for a week."
+    "Only if you eat broccoli."
 ];
 
 function shake8Ball() {
     const question = document.getElementById('question').value;
     const responseDiv = document.getElementById('response');
+    const answerDiv = document.getElementById('answer');
     
     if (question.trim() === "") {
         responseDiv.innerHTML = "Please ask a question!";
@@ -23,8 +24,10 @@ function shake8Ball() {
     const randomIndex = Math.floor(Math.random() * answers.length);
     const randomAnswer = answers[randomIndex];
     
-    responseDiv.innerHTML = `<p>You asked: ${question}</p><p>The Magic 8 Ball says: ${randomAnswer}</p>`;
+    answerDiv.innerHTML = randomAnswer;
+    responseDiv.innerHTML = "";
 }
+
 
 
 
